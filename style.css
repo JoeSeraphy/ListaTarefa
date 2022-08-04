@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url(./iamgen/705836.jpg) no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background: #0000006c;
+
+  padding: 30px 40px;
+  width: 45%;
+  max-width: 50rem;
+  border-radius: 0.5rem;
+}
+.new-task-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-task-container input {
+  flex: 3;
+  font-size: 1.2rem;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 5px;
+  padding: 1.2rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.new-task-container input:focus {
+  border-color: rgba(81, 163, 39, 0.993);
+}
+
+.new-task-btn {
+  flex: 1;
+  border-radius: 5px;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  background: rgba(81, 163, 39, 0.993);
+  margin-left: 1.6rem;
+  cursor: pointer;
+}
+
+.new-task-btn:hover {
+  filter: brightness(1.2);
+}
+
+.tasks-container {
+  background: #fff;
+  padding: 30px 20px;
+  margin-top: 6rem;
+  border-radius: 0.5rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.task-item i {
+  background: rgba(81, 163, 39, 0.993);
+  color: #fff;
+  padding: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+}
